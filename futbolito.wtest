@@ -1,0 +1,11 @@
+import objetos.*
+import wollok.game.*
+
+describe "futbolito" {
+  test "buscarla" {
+    assert.notEquals(pelota.position(), lionel.position())
+    lionel.buscarla()
+    assert.equals(pelota.position(), lionel.position())
+    
+  }
+}
