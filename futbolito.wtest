@@ -3,6 +3,15 @@ import wollok.game.*
 
 describe "futbolito" {
 
+
+    test "buscarla" {
+        assert.notEquals(pelota.position(),lionel.position())
+        lionel.buscarla()
+        assert.equals(pelota.position(), lionel.position() )
+
+
+    }
+
     test "inicio"  {
         const inicio = game.at(0,5)
         assert.notEquals(inicio, pelota.position())
