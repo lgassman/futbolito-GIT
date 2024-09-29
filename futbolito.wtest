@@ -1,0 +1,12 @@
+import objetos.*
+import wollok.game.*
+
+describe "test de futbolito" {
+  test "esquina" {
+    const esquina = game.at(0,0)
+    assert.notEquals(esquina, pelota.position())
+    pelota.esquina()
+    assert.equals(esquina, pelota.position())
+    
+  }
+}
