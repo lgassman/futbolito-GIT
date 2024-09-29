@@ -35,7 +35,7 @@ Nota: No olvidarse de hacer los tests también, son parte del requerimiento!
 Nota: Ojo con asumir en los tests que el tablero tiene el mismo tamaño que en el program. No es así. 
 Usar un describe con el método initialize
 
-## Luego de los *merges*
+## Luego de los *merges* 
 Puede pasar dos cosas luego de todos los merges:
 1) Haya quedado código duplicado (¿Tal vez en las validaciones?). Si es así, en un nuevo feature branch
 hacer el refactor para eliminar el código duplicado.
