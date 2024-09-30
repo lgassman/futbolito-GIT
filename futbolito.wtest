@@ -1,5 +1,5 @@
 import objetos.*
-import wollok.*
+import wollok.game.*
 
 describe "futbolito" {
 
@@ -10,5 +10,12 @@ describe "futbolito" {
         assert.equals(pelota.position(), lionel.position() )
 
 
+    }
+
+    test "inicio"  {
+        const inicio = game.at(0,5)
+        assert.notEquals(inicio, pelota.position())
+        pelota.inicio()
+        assert.equals(inicio, pelota.position())
     }
 }
